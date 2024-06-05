@@ -11,3 +11,7 @@
 
 - In case of differ html parsing continues and parallelly fetches scripts if encountered
 - after html parsing is over then scripts are executed
+
+
+# async - Does not Garenty the order of execution
+# differ- Maintaine order of execution
