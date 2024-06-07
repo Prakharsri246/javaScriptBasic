@@ -5,35 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        section {
+            background-color: aqua;
+            display: flex;  
+            width: 100%;
+            justify-content:space-between; /*adding space between elements in horizontal direction  */
+            align-items: center;  /* align item in vertical order */
+            flex-wrap: wrap;    /* when screen size is adjusted to small ,,all start coming one below the other  */
+            margin-top: 20%;
+        }
+        section div {
+            padding: 20px;
+          flex-basis: 20%;  /* used in case with  */
+            border: 1px solid black;
+        }
+        .childDiv1 {
+            background-color: red;
+        }
+        .childDiv2 {
+            background-color: yellow;
+        }
+        .childDiv3 {
+            background-color: greenyellow;
+        }
+    </style>
 </head>
-<style>
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-    section {
-        background-color: aqua;
-        display: flex;
-        width: 100%;
-       justify-content:space-around;
-    }
-    section div{
-        padding: 20px;
-        width: 50%;
-        border: 1px solid black;
-    }
-    .childDiv1 {
-        background-color: red;
-    }
-    .childDiv2 {
-        
-        background-color: yellow;
-    }
-    .childDiv3 {
-        background-color: greenyellow;
-    }
-</style>
 <body>
     <section class="parentDiv">
         <div class="childDiv1">
@@ -42,7 +44,7 @@
         </div>
         <div class="childDiv2">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum ]
-            has been the industry's standard dummy text ever since the 1500s
+         
         </div>
         <div class="childDiv3">
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum ]
